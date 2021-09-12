@@ -1268,6 +1268,9 @@ footer .container-fluid {
   #progress {
     overflow: hidden;
   }
+  .contact-card .card{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {}
