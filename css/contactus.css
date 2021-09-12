@@ -1,0 +1,58 @@
+@import url("./fonts.css");
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+header .container-fluid{
+    background-image: url('../Assets/background/bunting-flag.png');
+    background-position: cover;
+    background-repeat: repeat;
+    height: 450px;
+    width: 100%;
+}
+header .container-fluid::before{
+    content: '';
+    display: block;
+    background-color: #000000bd;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+header .container-fluid h1{
+    display: block;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 10;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+header h1 span{
+    color: #0096FF;
+    font-size: 20px;
+}
+.card{
+    margin-top: 20px;
+}
+.card-img-top{
+    color: dodgerblue;
+}
+.card-title{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.card-text{
+    font-size: 14px;
+    text-align: center;
+}
