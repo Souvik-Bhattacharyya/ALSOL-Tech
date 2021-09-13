@@ -324,7 +324,7 @@ a {
     margin-right: auto;
   }
   .nav-bag .navbar-nav {
-    margin-top: 40px !important;
+    margin-top: 40px ;
   }
   .navbar .navbar-brand::before {
     display: none;
@@ -332,6 +332,12 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar-collapse{
+    background-color: #292727;
+  }
+  .nav-bag .navbar-collapse{
+    background-color: transparent;
+  }
   .nav-item {
     text-align: center;
   }
@@ -342,6 +348,10 @@ a {
   }
   .navbar-nav {
     margin-right: auto;
+    margin-top: 10px;
+  }
+  .nav-bag .navbar-nav {
+    margin-top: 20px ;
   }
   .navbar-nav .nav-item .nav-link.active {
     color: #ffc107 !important;
