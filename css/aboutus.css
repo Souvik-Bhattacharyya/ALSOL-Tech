@@ -44,13 +44,18 @@
 
 @media only screen and (max-width: 768px) {
     #header .container-fluid h1 {
-        font-size: 4em;
+        font-size: 65px;
+        filter: drop-shadow(3px 3px 0px #ffc107);
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
     #header .container-fluid h1 {
-        font-size: 3em;
+        font-size: 40px;
+        filter: drop-shadow(3px 3px 0px #ffc107);
+    }
+    .vision {
+        font-size: 14px !important;
     }
 }
 
@@ -226,10 +231,11 @@
 
 .caro-cap {
     margin-bottom: 0px;
-    padding: 0px 20px;
-    height: 120px;
+    padding: 10px 20px;
+    height: 105px;
     font-size: 13px;
     font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
 }
 
 .details {
@@ -338,16 +344,6 @@
     .lead {
         font-size: 16px;
     }
-    /* .clients-says .carousel-control-next {
-        position: absolute;
-        border-radius: 0px;
-        right: 0px;
-        top: 0px;
-        bottom: 70px;
-        z-index: 1;
-        width: 20px;
-        height: 155px;
-    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -366,6 +362,7 @@
         letter-spacing: 1px;
         font-weight: 400;
         line-height: 16px;
+        padding-top: 0;
     }
     .user-icon {
         position: absolute;
@@ -390,12 +387,6 @@
 }
 
 @media only screen and (max-width: 430px) {
-    /* .user-icon {
-    position: absolute;
-    z-index: 1000;
-    top: 153px;
-    left: 50px;
-  } */
     .caro-cap {
         font-size: 11px;
     }
@@ -408,4 +399,22 @@
     .top-contain-para {
         font-size: 13px;
     }
+}
+
+.caro-cap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.caro-cap::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.caro-cap::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 20px;
+}
+
+.caro-cap::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    width: 0px;
 }

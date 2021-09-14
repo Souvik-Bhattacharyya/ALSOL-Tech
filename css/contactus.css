@@ -46,12 +46,28 @@
     #header .container-fluid h1 {
         font-size: 4em;
     }
+    .contact-us-h1{
+        font-size: 35px;
+    }
+    .card-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    
 }
 
 @media only screen and (max-width: 380px) {
     #header .container-fluid h1 {
         font-size: 3em;
     }
+    .contact-us-h1{
+        font-size: 28px;
+    }
+    .card-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    
 }
 
 .card {
@@ -71,6 +87,22 @@
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+.contact-us-h1{
+    color: #666666;
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+}
+.text-muted{
+    color: #b1b1b1;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: "Poppins" , sans-serif;
 }

@@ -42,17 +42,6 @@
     color: #ffff;
 }
 
-@media only screen and (max-width: 768px) {
-    #header .container-fluid h1 {
-        font-size: 4em;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    #header .container-fluid h1 {
-        font-size: 3em;
-    }
-}
 
 .top-contain-head {
     font-size: 2em;
@@ -186,10 +175,30 @@
     background-color: #fff;
 }
 
-.service-detail .card-body {
-    height: 200px;
+.service-detail .card {
+    height: 230px;
 }
 
 .service-detail .card-text {
     padding: 10px 20px !important;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .service-detail .card {
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #header .container-fluid h1 {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #header .container-fluid h1 {
+        font-size: 3em;
+    }
 }

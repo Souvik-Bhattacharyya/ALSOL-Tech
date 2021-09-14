@@ -59,3 +59,12 @@
             return false;
         });
     });
+
+
+    // Footer Btn
+
+    $(document).ready(function(){
+        $("#footer-btn").click(function(){
+            $(".footer").toggleClass("hide");
+        });
+    });

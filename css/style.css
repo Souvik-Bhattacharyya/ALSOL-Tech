@@ -259,6 +259,7 @@ a {
 }
 
 /* NAVBAR */
+
 /* /========================================================================= */
 
 .navbar-light .navbar-toggler {
@@ -290,7 +291,6 @@ a {
   top: -20px;
   filter: drop-shadow(2px 2px 5px #2b2b2b57);
   display: block;
-
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
   -webkit-animation-duration: 1s;
@@ -324,18 +324,18 @@ a {
     margin-right: auto;
   }
   .nav-bag .navbar-nav {
-    margin-top: 40px ;
+    margin-top: 40px;
   }
   .navbar .navbar-brand::before {
     display: none;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar-collapse{
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
     background-color: #292727;
   }
-  .nav-bag .navbar-collapse{
+  .nav-bag .navbar-collapse {
     background-color: transparent;
   }
   .nav-item {
@@ -351,14 +351,15 @@ a {
     margin-top: 10px;
   }
   .nav-bag .navbar-nav {
-    margin-top: 20px ;
+    margin-top: 20px;
   }
   .navbar-nav .nav-item .nav-link.active {
     color: #ffc107 !important;
     border-left: 4px solid #ffc107;
+    border-right: 4px solid #ffc107;
     border-bottom: none !important;
   }
-  .navbar-nav .nav-item:hover .nav-link{
+  .navbar-nav .nav-item:hover .nav-link {
     border-bottom: 3px solid transparent !important;
     border-radius: 0;
     color: #ffc107 !important;
@@ -486,7 +487,7 @@ a {
   border-bottom: 3px solid #ffc107;
 }
 
-.navbar-nav .nav-item:hover .nav-link{
+.navbar-nav .nav-item:hover .nav-link {
   border-bottom: 3px solid #ffc107;
   border-radius: 0;
   color: #fff;
@@ -610,7 +611,6 @@ a {
 }
 
 .box .card-body {
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,7 +642,7 @@ a {
 }
 
 #services .card {
-  height: auto !important;
+  height: 230px;
   width: 100%;
 }
 
@@ -893,62 +893,81 @@ a {
 
 /* Footer */
 
-/* footer{
-  position: fixed;
-} */
-
-footer .footer-icon {
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100%;
-  height: 100%;
-}
-
-.footer-icon .icons {
+.footer {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   left: 0px;
+  z-index: 200;
+  transition: 1s ease margin-left;
+}
+
+.hide .icons {
+  margin-left: -110px;
+}
+
+.footer-icon {
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+  position: relative;
+}
+
+.footer-icon .btn-footer {
+  color: #ffc107;
+  border: transparent;
+  background-image: url(../Assets/Icons/user-minus-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: transparent;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.hide .footer-icon .btn-footer {
+  background-image: url(../Assets/Icons/user-plus-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: transparent;
+}
+
+.footer-icon .icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  transition: 1s ease;
+  transition: 1s cubic-bezier(1, -0.29, 0, 1.08);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  background-color: #fff;
-  padding: 10px 5px 10px 10px;
-  margin-left: -70px;
-  border-right: 4px solid #ffc107;
 }
-.footer-icon .icons img{
-  width: 64px;
-  height: 64px;
+
+.footer-icon .icons img {
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 1s ease;
   margin-bottom: 10px;
-  padding: 6px;
-}
-.footer-icon .icons img:nth-last-child(1){
-  margin-bottom: 0;
+  padding: 0px;
 }
 
-.footer-icon .icons:hover{
-  margin-left: 0px;
-}
-
-.footer-icon .icons img:hover{
-  transform: translateX(20px);
+.footer-icon .icons img:hover {
   transition: 1s ease;
-  background-color: #fff;
   border-radius: 6px;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
-
-
-
 
 /* Page-Loader */
 
@@ -969,9 +988,25 @@ footer .footer-icon {
   align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+  #services .card {
+    height: 290px;
+    width: 100%;
+  }
+  #services .card-text {
+    padding: 0 6px !important;
+  }
+  .contact-head .contact-h1 {
+    font-size: 35px;
+  }
+  .contact-card .card {
+    width: 100%;
+  }
+}
+
 /* Ipad View */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .w-50 {
     width: 100% !important;
     padding: 15px !important;
@@ -982,7 +1017,6 @@ footer .footer-icon {
   }
   .top-caro {
     height: 100% !important;
-    margin-top: -60px;
   }
   .top-caro .carousel-image {
     width: 100vw;
@@ -1021,15 +1055,6 @@ footer .footer-icon {
     margin-top: 40px;
     text-align: center;
   }
-  footer .icons i {
-    font-size: 24px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #c5c5c5;
-    cursor: pointer;
-    z-index: 100;
-    transition: all .8s ease;
-  }
   #progress {
     margin: 50px 0;
     height: 100%;
@@ -1061,11 +1086,33 @@ footer .footer-icon {
     justify-content: center;
     align-items: center;
   }
+  .Facility-text .lead {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: left;
+  }
+  .ourfocus-head {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .ourfocus-head span {
+    font-size: 26px;
+    font-weight: 300;
+  }
+  #services .card-icon {
+    top: -35px;
+  }
 }
 
 /* Mobile View */
 
 @media screen and (max-width: 450px) {
+  #services .card {
+    height: 200px;
+    width: 100%;
+  }
   #progress {
     overflow: hidden;
   }
@@ -1112,9 +1159,15 @@ footer .footer-icon {
   #services .card-text {
     font-size: 11px;
   }
+  .footer-icon .icons img {
+    width: 35px;
+    height: 35px;
+  }
+  .footer-icon .btn-footer {
+    width: 30px;
+    height: 30px;
+  }
 }
-
-/* @media screen and (max-width: 992px) {} */
 
 #services .card-body:hover .card-icon i {
   -webkit-animation-name: hinge;
