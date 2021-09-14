@@ -566,7 +566,7 @@ a {
   position: relative;
   max-width: 100%;
   object-fit: fill;
-  -webkit-filter: brightness(80%) blur(2px);
+  -webkit-filter: brightness(50%) blur(2px);
   transition: 2s ease;
 }
 

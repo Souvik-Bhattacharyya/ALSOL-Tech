@@ -16,7 +16,7 @@
 #header .container-fluid::before {
     content: '';
     display: block;
-    background-color: #00000077;
+    background-color: rgba(0, 0, 0, 0.51);
     top: 0;
     left: 0;
     bottom: 0;
@@ -42,32 +42,32 @@
     color: #ffff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #header .container-fluid h1 {
-        font-size: 4em;
+        font-size: 65px;
+        filter: drop-shadow(3px 3px 0px #ffc107);
     }
-    .contact-us-h1{
-        font-size: 35px;
+    .contact-us-h1 {
+        font-size: 35px !important;
     }
     .card-text {
-        font-size: 16px;
+        font-size: 16px !important;
         text-align: center;
     }
-    
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
     #header .container-fluid h1 {
-        font-size: 3em;
+        font-size: 40px;
+        filter: drop-shadow(3px 3px 0px #ffc107);
     }
-    .contact-us-h1{
-        font-size: 28px;
+    .contact-us-h1 {
+        font-size: 28px !important;
     }
     .card-text {
-        font-size: 14px;
+        font-size: 14px !important;
         text-align: center;
     }
-    
 }
 
 .card {
@@ -91,18 +91,19 @@
     text-align: center;
 }
 
-.row{
+.row {
     justify-content: center;
 }
 
-.contact-us-h1{
+.contact-us-h1 {
     color: #666666;
     font-family: "Oswald", sans-serif;
     font-size: 45px;
 }
-.text-muted{
+
+.text-muted {
     color: #b1b1b1;
     letter-spacing: 1px;
     font-size: 14px;
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
 }

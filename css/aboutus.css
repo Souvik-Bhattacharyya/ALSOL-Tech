@@ -5,7 +5,7 @@
 }
 
 #header .container-fluid {
-    background-image: url('../Assets/background/bunting-flag.png');
+    background-image: url('../Assets/background/asteroids.jpg');
     background-position: cover;
     background-repeat: repeat;
     height: 500px;
@@ -16,7 +16,7 @@
 #header .container-fluid::before {
     content: '';
     display: block;
-    background-color: #00000077;
+    background-color: rgba(0, 0, 0, 0.60);
     top: 0;
     left: 0;
     bottom: 0;

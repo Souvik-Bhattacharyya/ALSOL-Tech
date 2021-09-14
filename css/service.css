@@ -5,7 +5,7 @@
 }
 
 #header .container-fluid {
-    background-image: url('../Assets/background/bunting-flag.png');
+    background-image: url('../Assets/background/retro-furnish.png');
     background-position: cover;
     background-repeat: repeat;
     height: 500px;
@@ -16,7 +16,7 @@
 #header .container-fluid::before {
     content: '';
     display: block;
-    background-color: #00000077;
+    background-color: #000000d9;
     top: 0;
     left: 0;
     bottom: 0;
@@ -193,12 +193,14 @@
 
 @media only screen and (max-width: 767px) {
     #header .container-fluid h1 {
-        font-size: 4em;
+        font-size: 65px !important;
+        filter: drop-shadow(3px 3px 0px #ffc107);
     }
 }
 
 @media only screen and (max-width: 380px) {
     #header .container-fluid h1 {
-        font-size: 3em;
+        font-size: 40px !important;
+        filter: drop-shadow(3px 3px 0px #ffc107);
     }
 }
