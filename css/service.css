@@ -1,11 +1,11 @@
-@import url('./fonts.css');
+@import url(./font.css);
 .container-fluid {
     margin: 0;
     padding: 0;
 }
 
 #header .container-fluid {
-    background-image: url('../Assets/background/retro-furnish.png');
+    background-image: url('../Assets/background/retro-furnish.webp');
     background-position: cover;
     background-repeat: repeat;
     height: 500px;

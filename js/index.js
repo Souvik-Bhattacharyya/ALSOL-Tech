@@ -1,3 +1,4 @@
+  
     // Navbar Shrinks on scroll=====================
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
@@ -5,7 +6,7 @@
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
         } else {
-            document.getElementById("navbar").style.top = "-52px";
+            document.getElementById("navbar").style.top = "0";
         }
         prevScrollpos = currentScrollPos;
     }
@@ -22,11 +23,6 @@
                 $("#navbar").removeClass("nav-bag");
             }
         })
-    });
-
-    // Data Aos=====================
-    AOS.init({
-        duration: 1200,
     });
 
     // Preloader=====================
