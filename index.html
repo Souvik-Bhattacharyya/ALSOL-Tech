@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="refresh">
     <title>Alsol Technology Solution Pvt. Ltd.</title>
     <link rel="icon" href="./Assets/Icons/Logo/LOGO-dark.png">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -17,11 +18,11 @@
     <nav id="navbar" style="border-radius: 0; transition: all .5s ease;"
         class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container" id="nav-container">
-            <a class="navbar-brand" href="./index.html">
+            <a class="navbar-brand" href="./index.html" aria-label="Logo">
                 <div id="logo">
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button aria-labelledby="Toggle navigation" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -72,69 +73,70 @@
     </nav>
     <!-- header -->
 
-    <button class="p-2" id="myBtn" title="Go to top">
+    <button aria-labelledby="myBtn" class="p-2" id="myBtn" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
 
     <section id="all_page">
         <div class="container-fluid top-caro" id="caro">
-            <a title="Click Me To Scroll" href="#services" id="scroll-down"></a>
+            <a title="Click Me To Scroll" href="#services" id="scroll-down">
+            </a>
 
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    <button aria-labelledby="Slide 1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    <button aria-labelledby="Slide 2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    <button aria-labelledby="Slide 3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    <button aria-labelledby="Slide 4" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-img-cont">
                             <img src="./Assets/carousel/development.webp" alt="./Assets/carousel/ux-store.webp"
-                                width="1366" height="768" class="carousel-image img-fluid">
+                             class="carousel-image img-fluid" alt="Development">
                         </div>
                         <div class="carousel-caption" aria-hidden="true">
-                            <h5 class="animate__animated animate__pulse">DEVELOPMENT</h5>
+                            <a class="animate__animated animate__pulse">DEVELOPMENT</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img-cont">
-                            <img src="./Assets/carousel/strategy2.webp" width="1366" height="768"
-                                class="carousel-image img-fluid">
+                            <img src="./Assets/carousel/strategy2.webp"
+                                class="carousel-image img-fluid" alt="Design">
                         </div>
                         <div class="carousel-caption" aria-hidden="true">
-                            <h5 class="animate__animated animate__pulse">DESIGN</h5>
+                            <a class="animate__animated animate__pulse">DESIGN</a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <div class="carousel-img-cont">
-                            <img src="./Assets/carousel/seo.webp" width="1366" height="768" class="carousel-image">
+                            <img src="./Assets/carousel/seo.webp" class="carousel-image" alt="Seo / Smm">
                         </div>
                         <div class="carousel-caption" aria-hidden="true">
-                            <h5 class="animate__animated animate__pulse">SEO / SMM</h5>
+                            <a class="animate__animated animate__pulse">SEO / SMM</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img-cont">
-                            <img src="./Assets/carousel/strategy.webp" width="1366" height="768" class="carousel-image">
+                            <img src="./Assets/carousel/strategy.webp" class="carousel-image" alt="Strategy">
                         </div>
                         <div class="carousel-caption" aria-hidden="true">
-                            <h5 class="animate__animated animate__pulse">STRATEGY</h5>
+                            <a class="animate__animated animate__pulse">STRATEGY</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button aria-labelledby="prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button aria-labelledby="next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -151,7 +153,7 @@
                                 <i class="fas fa-desktop text-center"></i>
                             </div>
                             <div class="card-content">
-                                <h5 class="card-title text-center">Website Design & Development</h5>
+                                <a class="card-title text-center">Website Design & Development</a>
                                 <p class="card-text text-center">We develop web application with effective UI/UX which
                                     are
                                     mobile first and user friendly</p>
@@ -165,7 +167,7 @@
                             <div class="card-icon">
                                 <i class="fab fa-android text-center"></i>
                             </div>
-                            <h5 class="card-title text-center">Android Application</h5>
+                            <a class="card-title text-center">Android Application</a>
                             <p class="card-text text-center">We have an intelligent team of hybrid developers,developing
                                 various kind of business oriented applications with high end features.</p>
                         </div>
@@ -178,7 +180,7 @@
                                 <i class="fas fa-edit text-center"></i>
                             </div>
                             <div class="card-content">
-                                <h5 class="card-title text-center">Content Writing</h5>
+                                <a class="card-title text-center">Content Writing</a>
                                 <p class="card-text text-center">One of our special focus is content writing, We always
                                     try to
                                     deliver plagiarism free, highly accurate content within deadline.</p>
@@ -217,21 +219,23 @@
                         <div class="container">
                             <div data-aos="fade-right">
                                 <label class="progress-text" for="laravel"><img src="./Assets/Icons/Laravel.png"
-                                        width="24" height="24" class="pe-2"> Laravel</label>
+                                        width="24" height="24" class="pe-2" alt="Laravel"> Laravel</label>
                                 <div class="progress" id="laravel">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                        style="width: 75%" aria-label="laravel"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="php"><img src="./Assets/Icons/PHP-logo.PNG" width="28"
-                                        height="32" class="pe-2"> PHP</label>
+                                <label class="progress-text" for="php">
+                                    <img src="./Assets/Icons/PHP-logo.PNG" width="28"
+                                        height="32" class="pe-2" alt="PhP"> PHP
+                                </label>
                                 <div class="progress" id="php">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" aria-label="progressbar"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                        style="width: 75%" aria-label="php"></div>
                                 </div>
                             </div>
 
@@ -242,38 +246,38 @@
                                 <div class="progress" id="python">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                        style="width: 75%" aria-label="python"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="AngularJs"><img
+                                <label class="progress-text" for="angularjs"><img
                                         src="./Assets/Icons/Angular-removebg-preview.png" width="28" class="pe-2" alt="Angular Js"
                                         height="24"> Angular Js</label>
-                                <div class="progress" id="AngularJs">
+                                <div class="progress" id="angularjs">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 85%"></div>
+                                        style="width: 85%" aria-label="angularjs"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="laravel"><img src="./Assets/Icons/react.png" alt="React Js"
+                                <label class="progress-text" for="react"><img src="./Assets/Icons/react.png" alt="React Js"
                                         width="24" height="24"></i> React Js</label>
-                                <div class="progress" id="laravel">
+                                <div class="progress" id="react">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 65%"></div>
+                                        style="width: 65%" aria-label="react"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
                                 <label class="progress-text" for="node"><img src="./Assets/Icons/nodejs.png" width="32" alt="Node JS"
                                         height="24" class="pe-2"> Node Js</label>
-                                <div class="progress" id="laravel">
+                                <div class="progress" id="node">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                        style="width: 75%" aria-label="node"></div>
                                 </div>
                             </div>
 
@@ -285,27 +289,26 @@
                                 <div class="progress" id="mongo">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 85%"></div>
+                                        style="width: 85%" aria-label="mongo"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="Oracle"><img src="./Assets/Icons/oracle.png" alt="Oracle"
+                                <label class="progress-text" for="Oracle"><img src="./Assets/Icons/oracle.png" alt="./Assets/Icons/oracle.png"
                                         width="32" height="25" class="pe-2"> Oracle</label>
                                 <div class="progress" id="Oracle">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                        style="width: 75%" aria-label="Oracle"></div>
                                 </div>
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="Neo4j"><img src="./Assets/Icons/Neo4j.png" width="32" alt="Neo4j"
+                                <label class="progress-text" id="neo4j-text" for="Neo4j"><img src="./Assets/Icons/Neo4j.png" width="32" alt="Neo4j"
                                         height="25" class="pe-2"> Neo4j</label>
                                 <div class="progress" id="Neo4j">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                        style="width: 75%"></div>
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%" aria-label="Neo4j"></div>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +325,7 @@
                         <h1 class="contact-h1">Get In Touch</h1>
                         <p class="contact-p">Hey! We are looking forward to start a project <br>with you</p>
                         <div class="middle mt-3">
-                            <a href="./contact.php" class="btn_3D">Send Us Something? <i
+                            <a href="./contact.php" class="btn1 hover-btn">Send Us Something? <i
                                     class="fas fa-angle-double-right ps-1"></i></a>
                         </div>
                     </div>
@@ -380,24 +383,24 @@
             <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
             </a>
             <div class="icons">
-                <a href="" class="icon-name">
-                    <div class="tool-tip">WhatsApp</div>
+                <a href=" https://wa.me/9064286385" aria-labelledby="whatsApp" class="icon-name" aria-label="WhatsApp">
+                    <div class="tool-tip" aria-tooltip-name="whatsApp" >Chat On <span>WhatsApp</span></div>
                     <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Facebook</div>
+                <a href="https://www.facebook.com/AlsolTech-102593158104879" aria-labelledby="facebook" aria-label="Facebook" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name = "facebook">Facebook</div>
                     <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Instagram</div>
+                <a href="https://www.instagram.com/alsoltech/" class="icon-name" aria-labelledby="instagram" aria-label="Instagram">
+                    <div class="tool-tip" aria-tooltip-name="instagram">Instagram</div>
                     <span><i class="fab fa-instagram insta"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Twitter</div>
+                <a href="https://twitter.com/AlsolTech?s=09" aria-labelledby="twitter" aria-label="Twitter" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name="twitter">Twitter</div>
                     <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Linkedin</div>
+                <a href="https://www.linkedin.com/company/68019635" aria-labelledby="linkedin" aria-label="Linkedin" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name="linkedin">Linkedin</div>
                     <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
                 </a>
             </div>
@@ -479,7 +482,7 @@
                         <path d="M175.514 236.344H188.506V244H165.596V203.284H175.514V236.344Z" fill="#138BCB" />
                     </g>
                     <g id="L_2" filter="url(#filter5_i)">
-                        <path d="M59.514 256.344H72.506V264H49.596V223.284H59.514V256.344Z" fill="#138BCB" />
+                        <path d="M59.514 256.344H72.506V264H49.596V223.284a9.514V256.344Z" fill="#138BCB" />
                     </g>
                     <g id="S" filter="url(#filter6_i)">
                         <path

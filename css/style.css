@@ -11,7 +11,7 @@ a {
 }
 
 body {
-    background: #fff
+    background: #fff;
 }
 
 .form-control {
@@ -95,7 +95,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    color: #fff;
+    color: #f1f1f1;
     background-color: #ffc107;
     font-weight: 300;
     font-size: 14px;
@@ -105,18 +105,6 @@ a {
 
 #myBtn:active {
     box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c
-}
-
-.btn_3D {
-    color: #fff;
-    padding: .375rem .75rem;
-    background-color: #ffc107;
-    transition: .5s ease
-}
-
-.btn_3D:hover {
-    color: #fff;
-    background-color: #898989
 }
 
 .btn:focus, .btn:active {
@@ -171,7 +159,7 @@ a {
 .btn1 {
     display: block;
     position: relative;
-    color: #ffc107;
+    color: #515bd4;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -180,7 +168,7 @@ a {
 
 .hover-btn {
     background: transparent;
-    border: 1px solid #ffc107;
+    border: 1px solid #515bd4;
     cursor: pointer;
     padding: 5px 15px;
     border-radius: 0;
@@ -191,7 +179,7 @@ a {
 
 .btn1::before {
     position: absolute;
-    background: #ffc107;
+    background: #515bd4;
     content: '';
     top: 50%;
     left: 50%;
@@ -238,6 +226,10 @@ a {
     color: #fff
 }
 
+
+
+
+/* ===================Navbar */
 .navbar-light .navbar-toggler {
     border-color: #ffc107
 }
@@ -570,25 +562,25 @@ a {
     animation: fade-down infinite ease-in-out 1.2s;
 }
 
-
 @keyframes fade-down {
     0% {
         top: 20%;
         opacity: 1
     }
     100% {
-        top: 50%;
+        top: 40%;
         opacity: 0
     }
 }
 
 /* mouse */
+
 @media only screen and (max-width: 450px) {
     #scroll-down {
         width: 35px;
         height: 50px;
     }
-    #scroll-down:before{
+    #scroll-down:before {
         width: 6px;
         height: 10px;
     }
@@ -640,7 +632,7 @@ a {
     text-align: center
 }
 
-.top-caro .carousel-caption h5 {
+.top-caro .carousel-caption a {
     font-size: 6em;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -888,7 +880,7 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     letter-spacing: .5px;
-    color: #9b9b9b
+    color: #757575
 }
 
 .contact-card {
@@ -996,7 +988,7 @@ a {
     .top-caro .carousel-caption {
         color: #fff!important
     }
-    .top-caro .carousel-caption h5 {
+    .top-caro .carousel-caption a {
         font-size: 35px;
         text-transform: uppercase;
         letter-spacing: 2px;
