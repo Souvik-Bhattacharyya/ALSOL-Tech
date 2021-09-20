@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import "./font.css";
 .container-fluid {
     margin: 0;
     padding: 0
 }
 
 #header .container-fluid {
-    background-image: url('../Assets/background/asteroids.webp');
+    background-image: url(../Assets/background/asteroids.webp);
     background-position: cover;
     background-repeat: repeat;
     height: 500px;
@@ -57,7 +55,7 @@
         filter: drop-shadow(3px 3px 0px #ffc107)
     }
     .vision {
-        font-size: 14px !important
+        font-size: 14px!important
     }
 }
 
@@ -67,11 +65,11 @@
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    color: #666 !important
+    color: #666!important
 }
 
 .top-contain-head i {
-    color: #c93030 !important
+    color: #c93030!important
 }
 
 .top-contain-para {
@@ -96,7 +94,7 @@
 }
 
 .card-text {
-    padding: 30px 20px !important;
+    padding: 30px 20px!important;
     border: 1px solid #ddd;
     background: #fff;
     letter-spacing: normal;
@@ -105,7 +103,7 @@
 }
 
 .card-text strong {
-    margin-bottom: 10px !important
+    margin-bottom: 10px!important
 }
 
 .card-text li {
@@ -134,7 +132,7 @@
 
 .vision {
     line-height: 26px;
-    padding: 40px 30px 30px 30px!important;
+    padding: 40px 30px 30px!important;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300
@@ -195,7 +193,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    transition: all 0.5s ease
+    transition: all .5s ease
 }
 
 .clients-says .carousel-item {
@@ -215,19 +213,21 @@
 .clients-says .carousel-item .carousel-caption {
     bottom: 50px;
     letter-spacing: 1px;
-    bottom: 0 !important;
+    bottom: 0!important;
     height: 100%;
     align-items: unset;
     overflow: hidden
 }
 
 .caro-cap {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 10px 20px;
-    height: 105px;
+    height: 120px;
     font-size: 13px;
     font-family: "Poppins", sans-serif;
-    overflow-y: scroll
+    overflow-y: scroll;
+    top: 0px;
+    position: relative;
 }
 
 .details {
@@ -256,7 +256,7 @@
 }
 
 .details .text {
-    width: calc(100% - 80px) !important;
+    width: calc(100% - 80px)!important;
     padding: 10px;
     color: #444
 }
@@ -281,9 +281,8 @@
     z-index: 1;
     width: 20px;
     height: 20px;
-    padding-top: 10px;
     padding: 0;
-    color: rgb(136, 136, 136);
+    color: #888;
     text-align: center;
     background: 0 0;
     border: 0;
@@ -301,9 +300,8 @@
     z-index: 1;
     width: 20px;
     height: 20px;
-    padding-top: 10px;
     padding: 0;
-    color: rgb(136, 136, 136);
+    color: #888;
     text-align: center;
     background: 0 0;
     border: 0;
@@ -369,7 +367,7 @@
     }
     .clients-says .carousel {
         position: relative;
-        transition: all 0.5s ease
+        transition: all .5s ease
     }
     .clients-says .carousel-item .caro-img {
         height: 150px
@@ -378,7 +376,8 @@
 
 @media only screen and (max-width: 430px) {
     .caro-cap {
-        font-size: 11px
+        font-size: 11px;
+        top: 10px;
     }
     .lead br {
         display: none
@@ -392,19 +391,19 @@
 }
 
 .caro-cap::-webkit-scrollbar {
-    width: 0px
+    width: 4px
 }
 
 .caro-cap::-webkit-scrollbar-track {
-    background: transparent
+    background: #fff
 }
 
 .caro-cap::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: #ef8700;
     border-radius: 20px
 }
 
 .caro-cap::-webkit-scrollbar-thumb:hover {
     background: transparent;
-    width: 0px
+    width: 0
 }

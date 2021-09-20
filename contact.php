@@ -10,8 +10,7 @@
     <link rel="icon" href="./Assets/Icons/Logo/LOGO-dark.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/contactus.css">
@@ -89,23 +88,34 @@
         </div>
     </div>
     <!-- Contact us -->
+
+    <?php 
+        if($message_sent):
+    ?>
+
+        <h3>Thanks, We'll be in touch</h3>
+
+    <?php 
+        else:
+    ?>
     <div class="container-fluid pt-5 mb-7">
         <div class="w-50 ms-auto me-auto">
             <div class="text-center py-4">
                 <h1 class="contact-us-h1">Send Us Something</h1>
                 <h6 class="text-muted">We'd love to hear from you.</h6>
             </div>
-            <form>
+
+            <form action="./php/contact.php" method="POST" id="contact_form">
                 <div class="mb-2">
-                    <input type="text" placeholder="Enter Your Name" class="form-control" id="exampleFormControlInput1"
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name" class="form-control" id="exampleFormControlInput1"
                         required />
                 </div>
                 <div class="mb-2">
-                    <input type="email" placeholder="Enter Your Email" class="form-control"
+                    <input id="email" name="emali" type="email" placeholder="Enter Your Email" class="form-control"
                         id="exampleFormControlInput1" required />
                 </div>
                 <div class="mb-4">
-                    <textarea style="resize: none;" class="form-control" id="exampleFormControlTextarea1"
+                    <textarea id="message" name="message" style="resize: none;" class="form-control" id="exampleFormControlTextarea1"
                         placeholder="Enter Your Message" rows="5" required></textarea>
                 </div>
                 <div class="d-flex" style="align-items: center; justify-content: center;">
@@ -115,22 +125,42 @@
         </div>
     </div>
 
+    
+    <?php 
+        endif;
+    ?>
+
     <button class="animate__animated animate__infinite animate__tada animate__delay-5s animate__slow p-2"
         onclick="topFunction()" id="myBtn" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
 
     <!-- Footer -->
-    <div class="footer hide">
+    <div class="footer hide" id="footer">
         <div class="footer-icon">
             <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
             </a>
             <div class="icons">
-                <a href=""><i class="fab fa-whatsapp" style="color: #25D366;"></i></a>
-                <a href=""><i class="fab fa-facebook" style="color:#1778f2;"></i></a>
-                <a href=""><i class="fab fa-instagram insta"></i></a>
-                <a href=""><i class="fab fa-twitter" style="color:#00ACEE;"></i></a>
-                <a href=""><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">WhatsApp</div>
+                    <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Facebook</div>
+                    <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Instagram</div>
+                    <span><i class="fab fa-instagram insta"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Twitter</div>
+                    <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Linkedin</div>
+                    <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
+                </a>
             </div>
         </div>
     </div>

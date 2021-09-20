@@ -9,7 +9,6 @@
     <title>Alsol Technology Solution Pvt. Ltd.</title>
     <link rel="icon" href="./Assets/Icons/Logo/LOGO-dark.png">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
@@ -19,7 +18,7 @@
         class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container" id="nav-container">
             <a class="navbar-brand" href="./index.html">
-                <div class="animate__animated animate__bounceInDown" id="logo">
+                <div id="logo">
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,22 +64,22 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                        <a class="nav-link" href="./contact.php">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- header -->
-    
+
     <button class="p-2" id="myBtn" title="Go to top">
         <i class="fa fa-chevron-up"></i>
     </button>
 
     <section id="all_page">
         <div class="container-fluid top-caro" id="caro">
-            <a title="Click Me To Scroll" href="#services" id="scroll-down"><i
-                    class="fa fa-angle-double-down fa-2x animate__animated animate__infinite animate__fadeOutDown"></i></a>
+            <a title="Click Me To Scroll" href="#services" id="scroll-down"></a>
+
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -95,17 +94,19 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-img-cont">
-                            <img src="./Assets/carousel/development.webp" width="1366" height="768" class="carousel-image img-fluid">
+                            <img src="./Assets/carousel/development.webp" alt="./Assets/carousel/ux-store.webp"
+                                width="1366" height="768" class="carousel-image img-fluid">
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" aria-hidden="true">
                             <h5 class="animate__animated animate__pulse">DEVELOPMENT</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img-cont">
-                            <img src="./Assets/carousel/strategy2.webp" width="1366" height="768" class="carousel-image img-fluid">
+                            <img src="./Assets/carousel/strategy2.webp" width="1366" height="768"
+                                class="carousel-image img-fluid">
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" aria-hidden="true">
                             <h5 class="animate__animated animate__pulse">DESIGN</h5>
                         </div>
                     </div>
@@ -114,7 +115,7 @@
                         <div class="carousel-img-cont">
                             <img src="./Assets/carousel/seo.webp" width="1366" height="768" class="carousel-image">
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" aria-hidden="true">
                             <h5 class="animate__animated animate__pulse">SEO / SMM</h5>
                         </div>
                     </div>
@@ -122,7 +123,7 @@
                         <div class="carousel-img-cont">
                             <img src="./Assets/carousel/strategy.webp" width="1366" height="768" class="carousel-image">
                         </div>
-                        <div class="carousel-caption">
+                        <div class="carousel-caption" aria-hidden="true">
                             <h5 class="animate__animated animate__pulse">STRATEGY</h5>
                         </div>
                     </div>
@@ -143,7 +144,7 @@
         <div class="container" id="services">
             <div class="row box">
                 <h1 class="service-box-head my-5 text-center">Our Services</h1>
-                <div class="col-md-4 mt-5 mb-5" data-aos="fade-up">
+                <div class="col-md-4 mt-5 mb-5">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-icon">
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5 mb-5" data-aos="fade-up">
+                <div class="col-md-4 mt-5 mb-5">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-icon">
@@ -170,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5 mb-5" data-aos="fade-up">
+                <div class="col-md-4 mt-5 mb-5">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-icon">
@@ -216,7 +217,7 @@
                         <div class="container">
                             <div data-aos="fade-right">
                                 <label class="progress-text" for="laravel"><img src="./Assets/Icons/Laravel.png"
-                                        width="24" class="pe-2"> Laravel</label>
+                                        width="24" height="24" class="pe-2"> Laravel</label>
                                 <div class="progress" id="laravel">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -235,9 +236,8 @@
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="python"><img
-                                        src="./Assets/Icons/Pyton-removebg-preview.png" width="24" class="pe-2"
-                                        height="24">
+                                <label class="progress-text" for="python"><img src="./Assets/Icons/pyton.png" width="24" alt="Python"
+                                        class="pe-2" height="24">
                                     Python</label>
                                 <div class="progress" id="python">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
@@ -248,7 +248,7 @@
 
                             <div data-aos="fade-right">
                                 <label class="progress-text" for="AngularJs"><img
-                                        src="./Assets/Icons/Angular-removebg-preview.png" width="28" class="pe-2"
+                                        src="./Assets/Icons/Angular-removebg-preview.png" width="28" class="pe-2" alt="Angular Js"
                                         height="24"> Angular Js</label>
                                 <div class="progress" id="AngularJs">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
@@ -258,8 +258,8 @@
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="laravel"><img src="./Assets/Icons/react.png"
-                                        width="24"></i> React Js</label>
+                                <label class="progress-text" for="laravel"><img src="./Assets/Icons/react.png" alt="React Js"
+                                        width="24" height="24"></i> React Js</label>
                                 <div class="progress" id="laravel">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -268,7 +268,7 @@
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="node"><img src="./Assets/Icons/nodejs.png" width="32"
+                                <label class="progress-text" for="node"><img src="./Assets/Icons/nodejs.png" width="32" alt="Node JS"
                                         height="24" class="pe-2"> Node Js</label>
                                 <div class="progress" id="laravel">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
@@ -280,7 +280,7 @@
                             <div data-aos="fade-right">
                                 <label class="progress-text" for="mongo"><img
                                         src="./Assets/Icons/mongo-removebg-preview.png" width="36" class="pe-1"
-                                        height="32">
+                                        height="32" alt="MongoDB">
                                     MongoDB</label>
                                 <div class="progress" id="mongo">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
@@ -290,8 +290,8 @@
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="Oracle"><img src="./Assets/Icons/oracle.png"
-                                        width="32" class="pe-2"> Oracle</label>
+                                <label class="progress-text" for="Oracle"><img src="./Assets/Icons/oracle.png" alt="Oracle"
+                                        width="32" height="25" class="pe-2"> Oracle</label>
                                 <div class="progress" id="Oracle">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -300,8 +300,8 @@
                             </div>
 
                             <div data-aos="fade-right">
-                                <label class="progress-text" for="Neo4j"><img src="./Assets/Icons/Neo4j.png" width="32"
-                                        class="pe-2"> Neo4j</label>
+                                <label class="progress-text" for="Neo4j"><img src="./Assets/Icons/Neo4j.png" width="32" alt="Neo4j"
+                                        height="25" class="pe-2"> Neo4j</label>
                                 <div class="progress" id="Neo4j">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
@@ -322,8 +322,8 @@
                         <h1 class="contact-h1">Get In Touch</h1>
                         <p class="contact-p">Hey! We are looking forward to start a project <br>with you</p>
                         <div class="middle mt-3">
-                            <a href="./contact.html" class="btn_3D ">Send Us Something? <i
-                                    class="fa fa-angle-double-right ps-1 animate__animated animate__infinite animate__fadeOutRight"></i></a>
+                            <a href="./contact.php" class="btn_3D">Send Us Something? <i
+                                    class="fas fa-angle-double-right ps-1"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 contact-card" data-aos="flip-left">
@@ -375,19 +375,35 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-icon">
             <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
             </a>
             <div class="icons">
-                <a href=""><i class="fab fa-whatsapp" style="color: #25D366;"></i></a>
-                <a href=""><i class="fab fa-facebook" style="color:#1778f2;"></i></a>
-                <a href=""><i class="fab fa-instagram insta"></i></a>
-                <a href=""><i class="fab fa-twitter" style="color:#00ACEE;"></i></a>
-                <a href=""><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">WhatsApp</div>
+                    <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Facebook</div>
+                    <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Instagram</div>
+                    <span><i class="fab fa-instagram insta"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Twitter</div>
+                    <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
+                </a>
+                <a href="" class="icon-name">
+                    <div class="tool-tip">Linkedin</div>
+                    <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
+                </a>
             </div>
         </div>
     </div>
+
 
     <div class="pageloader">
         <svg id="png" viewBox="0 0 192 302" fill="none" xmlns="http://www.w3.org/2000/svg">
