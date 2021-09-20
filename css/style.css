@@ -137,7 +137,7 @@ a {
     float: left;
     padding: 6px 16px;
     border-radius: 4px;
-    background-color: #ffc107;
+    background-color: #515bd4;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -204,7 +204,7 @@ a {
 
 .hover-btn1 {
     background: transparent;
-    border: 1px solid #ffc107;
+    border: 1px solid #515bd4;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 0;
@@ -288,7 +288,7 @@ a {
 .navbar-brand #logo {
     width: 66px;
     height: 100px;
-    background-image: url(../Assets/Icons/Logo/LOGO-light.png);
+    background-image: url(../Assets/Icons/Logo/LOGO-light.avif);
     background-repeat: no-repeat;
     background-size: contain;
     object-fit: scale-down;
@@ -325,7 +325,13 @@ a {
 
 @media only screen and (max-width: 767px) {
     .navbar-collapse {
-        background-color: #292727
+        background-image: url(../Assets/background/chalkboard.jpg);
+        height: 450px;
+        margin-top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
     }
     .nav-bag .navbar-collapse {
         background-color: transparent
@@ -536,39 +542,40 @@ a {
     position: absolute;
     bottom: 20%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(-90deg);
     z-index: 100;
     border-radius: 30px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
     background-color: transparent;
-    border: 2px solid #fff;
-    width: 40px;
-    height: 60px;
+    width: 60px;
+    height: 40px;
 }
 
-#scroll-down:before {
-    content: '';
-    z-index: 100;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: 8px;
-    height: 15px;
-    border-radius: 50px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: fade-down infinite ease-in-out 1.2s;
+#scroll-down img{
+    /* animation: fade-down infinite ease-in-out 1s; */
+    height: 40px;
+    width: 40px;
 }
+
+#scroll-down img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+#scroll-down img:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
 
 @keyframes fade-down {
     0% {
-        top: 20%;
+        left: 50%;
         opacity: 1
     }
     100% {
-        top: 40%;
+        left: 10%;
         opacity: 0
     }
 }
@@ -580,9 +587,12 @@ a {
         width: 35px;
         height: 50px;
     }
-    #scroll-down:before {
-        width: 6px;
-        height: 10px;
+    #scroll-down img{
+        width: 30px;
+        height: 30px;
+    }
+    #scroll-down img:nth-child(2){
+        right: 20px;
     }
 }
 
@@ -665,7 +675,7 @@ a {
     font-family: 'Roboto', sans-serif;
     color: #868686;
     position: relative;
-    padding-bottom: 10px
+    padding-bottom: 20px
 }
 
 .service-box-head::before {
@@ -1283,13 +1293,13 @@ a {
 }
 
 .footer-icon .btn-footer::before {
-    content: "\f152";
+    content: "\f35a";
     font-family: "Font Awesome 5 Free";
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .hide .footer-icon .btn-footer::before {
-    content: "\f191";
+    content: "\f359";
 }
 
 .insta {
@@ -1318,12 +1328,12 @@ a {
     align-items: center;
 }
 
-.footer-icon .icons .icon-name:hover .tool-tip {
+.footer-icon .icons .icon-name:hover .tool-tip{
     display: block;
     pointer-events: auto;
 }
 
-.footer-icon .icons .icon-name .tool-tip {
+.tool-tip {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -1340,7 +1350,7 @@ a {
     pointer-events: none;
 }
 
-.footer-icon .icons .icon-name .tool-tip::before {
+.tool-tip::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -1350,6 +1360,8 @@ a {
     transform: translateY(-50%) rotate(45deg);
     background-color: #515bd4;
 }
+
+
 
 .footer-icon .icons .icon-name span i {
     font-size: 34px;

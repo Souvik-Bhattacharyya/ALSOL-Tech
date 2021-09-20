@@ -20,8 +20,8 @@
     <nav id="navbar" style="border-radius: 0; transition: all .5s ease;"
         class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container" id="nav-container">
-            <a class="navbar-brand" href="./index.html">
-                <div class="animate__animated animate__bounceInDown" id="logo">
+            <a class="navbar-brand" href="./index.html" aria-label="Logo">
+                <div id="logo">
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,15 +47,24 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#header">Home</a></li>
+                        <li><a class="dropdown-item" href="#what_get">What We Do?</a></li>
+                        <li><a class="dropdown-item" href="#vision">Vision & Mission</a></li>
+                        <li><a class="dropdown-item" href="#testimonial">Testimonial</a></li>
+                    </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./service.html">Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.php">Contact Us</a>
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +79,7 @@
         </div>
     </header>
 
-    <div class="container top-contain">
+    <div class="container top-contain" id="what_get">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="top-contain-head text-center">We<i class="fa fa-heart"></i> What We Do</h1>
@@ -86,7 +95,7 @@
                         reasons for the increasing popularity of our company. We leave no stone unturned to make our
                         clients satisfied. Your satisfaction is our inspiration! So, don't think twice to get connected
                         with us. We feel happy to help you!</span> <a
-                        style="color: #ffc107; cursor: pointer; text-decoration: underline;" onclick="myFunction()"
+                        style="color: #515bd4; cursor: pointer; text-decoration: underline;" onclick="myFunction()"
                         id="readMore">read more?</a></p>
 
             </div>
@@ -94,20 +103,20 @@
     </div>
 
     <!-- About Cards -->
-    <div style="background: #f5f5f5;">
+    <div style="background: #f5f5f5;" id="vision">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-5">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Why Choose Us?</h5>
+                            <h1 class="card-title">Why Choose Us?</h1>
                             <ul class="card-text">
-                                <li><i class="fa fa-check"></i>24/7 IT Solutions/Consultation</li>
-                                <li><i class="fa fa-check"></i>Web Development & Design</li>
-                                <li><i class="fa fa-check"></i>Fast Reliable Web Hosting Services</li>
-                                <li><i class="fa fa-check"></i>Search Engine Optimization</li>
-                                <li><i class="fa fa-check"></i>Best & Fast Graphics Design Experts</li>
-                                <li><i class="fa fa-check"></i>Fast Domain Registration Services</li>
+                                <li class="card-list"><i class="fa fa-check"></i>24/7 IT Solutions/Consultation</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Web Development & Design</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Fast Reliable Web Hosting Services</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Search Engine Optimization</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Best & Fast Graphics Design Experts</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Fast Domain Registration Services</li>
                             </ul>
                         </div>
                     </div>
@@ -115,14 +124,15 @@
                 <div class="col-md-7">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Our Objectives</h5>
+                            <h1 class="card-title">Our Objectives</h1>
                             <ul class="card-text">
+                                <li style="line-height: 30px; list-style-type: none;">
                                 <strong class="lead">With our result-centric digital marketing
-                                    endeavors,<br>we help you to:<br><br></strong>
-                                <li><i class="fa fa-check"></i>Increasing visibility of your business</li>
-                                <li><i class="fa fa-check"></i>Create and boost brand awareness among your customers
+                                    endeavors,<br>we help you to:<br><br></strong></li>
+                                <li class="card-list"><i class="fa fa-check"></i>Increasing visibility of your business</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Create and boost brand awareness among your customers
                                 </li>
-                                <li><i class="fa fa-check"></i>Ensure a settle edge over your industry rivals</li>
+                                <li class="card-list"><i class="fa fa-check"></i>Ensure a settle edge over your industry rivals</li>
                             </ul>
                         </div>
                     </div>
@@ -130,7 +140,7 @@
                 <div class="col-md-12 mb-5">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title ms-4">Vision & Mission</h5>
+                            <h1 class="card-title ms-4">Vision & Mission</h1>
                             <p class="card-text vision">
                                 We serve the profound vision of minimizing the gap between you and your potential
                                 customers through our efficient website and mobile apps.<br>
@@ -153,8 +163,8 @@
             <div class="row" style="margin-right: 0 !important;">
                 <div class="col-lg-6 mb-5 clients-decs">
                     <div class="decs-decs">
-                        <h5 class="offer-head"><span>TRUST US! </span>WE CAN HELP YOU</h5>
-                        <h6>Let us help you get started by providing the following web services</h6>
+                        <h1 class="offer-head"><span>TRUST US! </span>WE CAN HELP YOU</h1>
+                        <h2>Let us help you get started by providing the following web services</h2>
                         <ul>
                             <li>Fast Reliable Web Hosting Services</li>
                             <li>Competitive Pricing / No hidden charges</li>
@@ -167,9 +177,9 @@
                 </div>
 
 
-                <div class="col-lg-6 clients-says">
+                <div class="col-lg-6 clients-says" id="testimonial">
                     <div class="w-100">
-                        <h5>What People Say</h5>
+                        <h1>What People Say</h1>
                     </div>
                     <div class="w-100">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -177,18 +187,14 @@
                                 <div class="carousel-item active">
                                     <div class="caro-img"></div>
                                     <div class="carousel-caption">
-                                        <p class="caro-cap">Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.</p>
+                                        <p class="caro-cap my-3">They have an effective solution for all your problems through their automation and processes. A great team who realy understands customer's needs.</p>
                                         <div class="details">
                                             <div class="img">
                                                 <img src="./Assets/Icons/profile-pic-male.png" alt="">
                                             </div>
                                             <div class="text">
-                                                <h6 class="name">Ajay Roy</h6>
-                                                <p class="type">Frontend Developer</p>
+                                                <h1 class="name">Agranee Banerjee</h1>
+                                                <p class="type">1 review</p>
                                             </div>
                                         </div>
                                     </div>
@@ -196,18 +202,14 @@
                                 <div class="carousel-item">
                                     <div class="caro-img"></div>
                                     <div class="carousel-caption">
-                                        <p class="caro-cap">Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.Some representative placeholder content for the first
-                                            slide.</p>
+                                        <p class="caro-cap">Big hands for those who started over the mazing idea of execution.The guys are really helpful and things are confidential and completely reliable.Great venture it was at all.Thanks a lot for making my project so ease.A bunch of good wishes for you guys.</p>
                                         <div class="details">
                                             <div class="img">
                                                 <img src="./Assets/Icons/profile-pic-male.png" alt="">
                                             </div>
                                             <div class="text">
-                                                <h6 class="name">Bijay Roy</h6>
-                                                <p class="type">UI/UX Developer</p>
+                                                <h1 class="name">Sourav Biswas</h1>
+                                                <p class="type">1 review </p>
                                             </div>
                                         </div>
                                     </div>
@@ -220,20 +222,26 @@
                                             particular project which i won't be naming.. I just had to get some content
                                             created and a logo designed.. We had a fixed deadline which needed out to be
                                             worked out well for both the con and i was on the client end..and i came
-                                            across this firm where we came on to the terms and the project was
-                                            executed.. But due to some circumstances the dead lines was Advanced!! And
-                                            these guys i don't know how but delivered the project in the updated
-                                            Timeline. Also not only it was delivered but the work was top notch!!" ...
-                                            You guys are Amazing!!!! and i just needed to share this. Thank you so much
-                                            for this experience... Was a delight working with you!!!
+                                            across this <span id="dots2" s>...</span><span id="more2" style="display: none;"> firm where we came on
+                                                to the terms and the project was
+                                                executed.. But due to some circumstances the dead lines was Advanced!!
+                                                And
+                                                these guys I don't know how but delivered the project in the updated
+                                                Timeline. Also not only it was delivered but the work was top notch!!"
+                                                ...
+                                                You guys are Amazing!!!! and I just needed to share this. Thank you so
+                                                much
+                                                for this experience... Was a delight working with you!!!</span>
+                                            <a style="color: #515bd4; cursor: pointer; text-decoration: underline;"
+                                                onclick="btn()" id="caroMore">More?</a>
                                         </p>
                                         <div class="details">
                                             <div class="img">
                                                 <img src="./Assets/Icons/profile-pic-male.png" alt="">
                                             </div>
                                             <div class="text">
-                                                <h6 class="name">Ram Mondal</h6>
-                                                <p class="type">Backend Developer</p>
+                                                <h1 class="name">Sharat u</h1>
+                                                <p class="type">Local Guide | 7 reviews</p>
                                             </div>
                                         </div>
                                     </div>
@@ -261,24 +269,24 @@
             <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
             </a>
             <div class="icons">
-                <a href="" class="icon-name">
-                    <div class="tool-tip">WhatsApp</div>
+                <a href=" https://wa.me/9064286385" aria-labelledby="whatsApp" class="icon-name" aria-label="WhatsApp">
+                    <div class="tool-tip" aria-tooltip-name="whatsApp" >Chat On <span>WhatsApp</span></div>
                     <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Facebook</div>
+                <a href="https://www.facebook.com/AlsolTech-102593158104879" aria-labelledby="facebook" aria-label="Facebook" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name = "facebook">Facebook</div>
                     <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Instagram</div>
+                <a href="https://www.instagram.com/alsoltech/" class="icon-name" aria-labelledby="instagram" aria-label="Instagram">
+                    <div class="tool-tip" aria-tooltip-name="instagram">Instagram</div>
                     <span><i class="fab fa-instagram insta"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Twitter</div>
+                <a href="https://twitter.com/AlsolTech?s=09" aria-labelledby="twitter" aria-label="Twitter" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name="twitter">Twitter</div>
                     <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
                 </a>
-                <a href="" class="icon-name">
-                    <div class="tool-tip">Linkedin</div>
+                <a href="https://www.linkedin.com/company/68019635" aria-labelledby="linkedin" aria-label="Linkedin" class="icon-name">
+                    <div class="tool-tip" aria-tooltip-name="linkedin">Linkedin</div>
                     <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
                 </a>
             </div>
@@ -486,7 +494,7 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript">
         // Read More======================
@@ -506,6 +514,26 @@
             }
         }
     </script>
+
+    <script type="text/javascript">
+        // Read More======================
+        function btn() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("caroMore");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "More?";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Less?";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
 </body>
 
 </html>
