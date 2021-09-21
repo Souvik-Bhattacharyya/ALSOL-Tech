@@ -10,20 +10,33 @@
     background-repeat: repeat;
     height: 500px;
     width: 100%;
-    position: relative
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 #header .container-fluid::before {
     content: '';
+    background-color: rgba(17, 17, 17, 0.6);
     display: block;
-    background-color: rgba(0, 0, 0, 0.60);
     top: 0;
     left: 0;
-    bottom: 0;
+    z-index: 1;
+    height: 500px;
+    width: 50%;
+}
+#header .container-fluid::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    top: 0;
     right: 0;
     z-index: 1;
-    height: 500px
+    height: 500px;
+    width: 50%;
 }
+
+
 
 #header .container-fluid h1 {
     display: block;
