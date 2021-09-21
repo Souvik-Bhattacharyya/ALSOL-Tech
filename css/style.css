@@ -333,6 +333,8 @@ a {
     }
     .nav-bag .navbar-collapse {
         background: transparent;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
     }
     .nav-item {
         text-align: center
