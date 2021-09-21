@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -230,10 +230,8 @@ a {
     color: #fff
 }
 
-
-
-
 /* ===================Navbar */
+
 .navbar-light .navbar-toggler {
     border-color: #ffc107
 }
@@ -329,10 +327,12 @@ a {
 
 @media only screen and (max-width: 767px) {
     .navbar-collapse {
-        background-image: url(../Assets/background/chalkboard.jpg);
+        background: rgba(17, 17, 17, 0.439);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
     .nav-bag .navbar-collapse {
-        background-color: transparent
+        background: transparent;
     }
     .nav-item {
         text-align: center
@@ -548,24 +548,23 @@ a {
     height: 40px;
 }
 
-#scroll-down img{
+#scroll-down img {
     /* animation: fade-down infinite ease-in-out 1s; */
     height: 40px;
     width: 40px;
 }
 
-#scroll-down img:nth-child(1){
+#scroll-down img:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0px;
 }
 
-#scroll-down img:nth-child(2){
+#scroll-down img:nth-child(2) {
     position: absolute;
     top: 0;
     right: 40px;
 }
-
 
 @keyframes fade-down {
     0% {
@@ -585,11 +584,11 @@ a {
         width: 35px;
         height: 50px;
     }
-    #scroll-down img{
+    #scroll-down img {
         width: 30px;
         height: 30px;
     }
-    #scroll-down img:nth-child(2){
+    #scroll-down img:nth-child(2) {
         right: 20px;
     }
 }
@@ -1326,7 +1325,7 @@ a {
     align-items: center;
 }
 
-.footer-icon .icons .icon-name:hover .tool-tip{
+.footer-icon .icons .icon-name:hover .tool-tip {
     display: block;
     pointer-events: auto;
 }
@@ -1358,8 +1357,6 @@ a {
     transform: translateY(-50%) rotate(45deg);
     background-color: #515bd4;
 }
-
-
 
 .footer-icon .icons .icon-name span i {
     font-size: 34px;
