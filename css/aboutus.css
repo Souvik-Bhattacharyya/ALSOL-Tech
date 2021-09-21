@@ -51,8 +51,8 @@
 
 @media only screen and (max-width: 480px) {
     #header .container-fluid h1 {
-        font-size: 40px;
-        filter: drop-shadow(3px 3px 0px #ffc107)
+        font-size: 30px;
+        filter: drop-shadow(3px 2px 0px #ffc107)
     }
     .vision {
         font-size: 14px!important
@@ -388,6 +388,15 @@
     }
     .top-contain-para {
         font-size: 13px
+    }
+    #header .container-fluid{
+        height: 400px;
+    }
+    #header .container-fluid::after{
+        height: 400px;
+    }
+    #header .container-fluid::before{
+        height: 400px;
     }
 }
 

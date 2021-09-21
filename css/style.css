@@ -330,12 +330,6 @@ a {
 @media only screen and (max-width: 767px) {
     .navbar-collapse {
         background-image: url(../Assets/background/chalkboard.jpg);
-        height: 450px;
-        margin-top: -100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: -1;
     }
     .nav-bag .navbar-collapse {
         background-color: transparent

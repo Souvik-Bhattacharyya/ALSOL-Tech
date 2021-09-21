@@ -69,7 +69,7 @@
 
 @media only screen and (max-width: 480px) {
     #header .container-fluid h1 {
-        font-size: 40px;
+        font-size: 30px;
         filter: drop-shadow(3px 3px 0px #ffc107)
     }
     .contact-us-h1 {
@@ -78,6 +78,15 @@
     .card-text {
         font-size: 14px!important;
         text-align: center
+    }
+    #header .container-fluid{
+        height: 400px;
+    }
+    #header .container-fluid::after{
+        height: 400px;
+    }
+    #header .container-fluid::before{
+        height: 400px;
     }
 }
 
