@@ -17,23 +17,13 @@
 
 #header .container-fluid::before {
     content: '';
-    background-color: rgba(17, 17, 17, 0.6);
+    background: radial-gradient(#1116,#000);
     display: block;
     top: 0;
     left: 0;
     z-index: 1;
     height: 500px;
-    width: 50%;
-}
-#header .container-fluid::after {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.6);
-    display: block;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    height: 500px;
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -51,8 +41,10 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 5px;
     filter: drop-shadow(5px 5px 0px #ffc107);
-    color: #ffff
+    color: #ffff;
+    -webkit-box-reflect: below -37px linear-gradient(transparent, #0002);
 }
+
 
 .top-contain-head {
     font-size: 2em;

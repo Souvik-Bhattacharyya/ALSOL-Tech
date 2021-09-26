@@ -57,8 +57,34 @@ $(document).ready(function () {
 });
 
 
-// Footer Btn
+// Footer
 
+// Btn
 document.getElementById("footer-btn").addEventListener("click", function () {
     document.getElementById("footer").classList.toggle("hide");
+});
+
+// background
+
+$(document).ready(function () {
+
+    $.fn.scrollBottom = function(scroll){
+        if(typeof scroll === 'number'){
+          window.scrollTo(0,$(document).height() - $(window).height() - scroll);
+          return $(document).height() - $(window).height() - scroll;
+        } else {
+          return $(document).height() - $(window).height() - $(window).scrollTop();
+        }
+      }
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollBottom();
+        if (scroll > 80) {
+            $("#nav-bottom").removeClass("footer-bagr");
+        }
+
+        else {
+            $("#nav-bottom").addClass("footer-bagr");
+        }
+    })
 });

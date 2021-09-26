@@ -32,13 +32,15 @@
                     <ul class="nav-cont-ul ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="mailto:team@alsoltech.com"><i
-                                    class="fa fa-envelope fa-lg me-2"></i> team@alsoltech.com</a>
+                                    class="fas fa-envelope-open-text fa-lg me-2"></i> team@alsoltech.com</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"> <i class="fa fa-map fa-lg me-2"></i> Kolkata, India</a>
+                            <a class="nav-link" href="https://goo.gl/maps/tpZ81XduiSnH5GSR8"> <i
+                                    class="fas fa-map-signs fa-lg me-2"></i> Kolkata, India</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"> <i class="fa fa-phone fa-lg me-2"></i> 7980222011 / 9064286385</a>
+                            <a class="nav-link" href="callto:9064286385"> <i class="fas fa-phone-alt fa-lg me-2"></i>
+                                7980222011 / 9064286385</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +77,8 @@
                     <i class="card-img-top fa fa-map-marker fa-4x text-center pt-2"></i>
                     <div class="card-body">
                         <h5 class="card-title text-center mb-4">India</h5>
-                        <p class="card-text px-4">Shivalay Apartment, 3rd Floor, East Enclave bus Stand, near- Coal Bhawan/
+                        <p class="card-text px-4">Shivalay Apartment, 3rd Floor, East Enclave bus Stand, near- Coal
+                            Bhawan/
                             DLF 1, Kolkata- 700102<br><br>
                             <span class="text-danger">Tel: +91-9064286385 </span>
                         </p>
@@ -87,67 +90,79 @@
     </div>
     <!-- Contact us -->
 
-    <div class="container-fluid pt-5 mb-7">
-        <div class="w-50 ms-auto me-auto">
-            <div class="text-center py-4">
-                <h1 class="contact-us-h1">Send Us Something</h1>
-                <h6 class="text-muted">We'd love to hear from you.</h6>
+    <section id="form-container" style="position: relative;">
+        <div id="form" class="container-fluid popUp">
+            <div class="maps-g_map" style="display: flex; justify-content: center; align-items: center;">
+                <iframe id="g_map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14735.765239803522!2d88.4451506!3d22.5812983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3d163cd4913eb0b!2sAlsol%20Technology%20Solution%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1632404006361!5m2!1sen!2sin"
+                    style="border:0" allowfullscreen="" loading="lazy">
+                </iframe>
+                <a title="Click To Expand" class="contact-btn" id="contact_btn"></a>
             </div>
 
-            <form action="#" method="POST" id="contact_form">
-                <div class="mb-2">
-                    <input id="name" name="name" type="text" placeholder="Enter Your Name" class="form-control" id="exampleFormControlInput1"
-                        required />
+            <div class="contact_form">
+                <div class="text-center py-4">
+                    <h1 class="contact-us-h1">Send Us Something</h1>
+                    <h6 class="text-muted">We'd love to hear from you.</h6>
                 </div>
-                <div class="mb-2">
-                    <input id="email" name="emali" type="email" placeholder="Enter Your Email" class="form-control"
-                        id="exampleFormControlInput1" required />
-                </div>
-                <div class="mb-4">
-                    <textarea id="message" name="message" style="resize: none;" class="form-control" id="exampleFormControlTextarea1"
-                        placeholder="Enter Your Message" rows="5" required></textarea>
-                </div>
-                <div class="d-flex" style="align-items: center; justify-content: center;">
-                    <button type="submit" class="hover-btn1 btn1 w-100">Send Massage</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
-    <button class="animate__animated animate__infinite animate__tada animate__delay-5s animate__slow p-2"
-        onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa fa-chevron-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <div class="footer hide" id="footer">
-        <div class="footer-icon">
-            <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
-            </a>
-            <div class="icons">
-                <a href=" https://wa.me/9064286385" aria-labelledby="whatsApp" class="icon-name" aria-label="WhatsApp">
-                    <div class="tool-tip" aria-tooltip-name="whatsApp" >Chat On <span>WhatsApp</span></div>
-                    <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
-                </a>
-                <a href="https://www.facebook.com/AlsolTech-102593158104879" aria-labelledby="facebook" aria-label="Facebook" class="icon-name">
-                    <div class="tool-tip" aria-tooltip-name = "facebook">Facebook</div>
-                    <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
-                </a>
-                <a href="https://www.instagram.com/alsoltech/" class="icon-name" aria-labelledby="instagram" aria-label="Instagram">
-                    <div class="tool-tip" aria-tooltip-name="instagram">Instagram</div>
-                    <span><i class="fab fa-instagram insta"></i></span>
-                </a>
-                <a href="https://twitter.com/AlsolTech?s=09" aria-labelledby="twitter" aria-label="Twitter" class="icon-name">
-                    <div class="tool-tip" aria-tooltip-name="twitter">Twitter</div>
-                    <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
-                </a>
-                <a href="https://www.linkedin.com/company/68019635" aria-labelledby="linkedin" aria-label="Linkedin" class="icon-name">
-                    <div class="tool-tip" aria-tooltip-name="linkedin">Linkedin</div>
-                    <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
-                </a>
+                <form action="./php/contact.php" method="POST" id="contact_form" role="form">
+                    <div class="mb-2">
+                        <input id="name" name="name" type="text" placeholder="Enter Your Name" class="form-control"
+                            required="">
+                    </div>
+                    <div class="mb-2">
+                        <input id="email" name="emali" type="email" placeholder="Enter Your Email" class="form-control"
+                            required="">
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" style="resize: none;" class="form-control"
+                            placeholder="Enter Your Message" rows="5" required=""></textarea>
+                    </div>
+                    <div class="d-flex" style="align-items: center; justify-content: center;">
+                        <button type="submit" class="hover-btn btn1 w-100">Send Massage</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer id="nav-bottom">
+
+        <button class="p-2" onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+
+        <!-- Footer -->
+        <div class="footer hide" id="footer">
+            <div class="footer-icon">
+                <a class="btn btn-footer" id="footer-btn" title="Connect With Us">
+                </a>
+                <div class="icons">
+                    <a href=" https://wa.me/9064286385" aria-labelledby="whatsApp" class="icon-name"
+                        aria-label="WhatsApp">
+                        <span><i class="fab fa-whatsapp" style="color: #25D366;"></i></span>
+                    </a>
+                    <a href="https://www.facebook.com/AlsolTech-102593158104879" aria-labelledby="facebook"
+                        aria-label="Facebook" class="icon-name">
+                        <span><i class="fab fa-facebook" style="color:#1778f2;"></i></span>
+                    </a>
+                    <a href="https://www.instagram.com/alsoltech/" class="icon-name" aria-labelledby="instagram"
+                        aria-label="Instagram">
+                        <span><i class="fab fa-instagram insta"></i></span>
+                    </a>
+                    <a href="https://twitter.com/AlsolTech?s=09" aria-labelledby="twitter" aria-label="Twitter"
+                        class="icon-name">
+                        <span><i class="fab fa-twitter" style="color:#00ACEE;"></i></span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/68019635" aria-labelledby="linkedin" aria-label="Linkedin"
+                        class="icon-name">
+                        <span><i class="fab fa-linkedin" style="color: #0e76a8;"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="pageloader">
         <svg id="png" viewBox="0 0 192 302" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -345,9 +360,14 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    
-
     <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        // -----------------
+
+        document.getElementById("contact_btn").addEventListener("click", function () {
+            document.getElementById("form").classList.toggle("popUp");
+        });
+    </script>
 </body>
 
 </html>
