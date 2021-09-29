@@ -1,8 +1,11 @@
 <?php
+
+session_start();
 // uncomment bellow line inn production
 // error_reporting(0);
 
 // Include config file
+
 require_once "connection.php";
 
 $name = $email = $msg = "";
@@ -20,7 +23,7 @@ function get_value($key)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Validate name
 	$name =	get_value("name");
-	$email =	get_value("email");
+	$email =	get_value("emali");
 	$msg = get_value("message");
 
 	// verify for not null values 
@@ -32,23 +35,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 
 	// Check input errors before inserting in database
-	$sql = "INSERT INTO contactus ( name, email, msg) VALUES ('" . $name . "','" . $email . "','" . $msg . "')";
+	$sql = "INSERT INTO contactus ( name, email, message) VALUES ('" . $name . "','" . $email . "','" . $msg . "')";
 
 	$pdo_statement = $conn->prepare($sql);
 
 	$result = $pdo_statement->execute();
 
 	if (!$result) {
-		$response = array(
-			'status' => false,
-			'message' => 'An error occured...'
-		);
+		$_SESSION['status'] = "Something went wrong! Please try after sometime";
+			header("Location: ../contactus.php?status=error");
 	} else {
-		$response = array(
-			'status' => true,
-			'message' => 'Success',
-		);
+			$_SESSION['status'] = "Your Detais Submitted Successfully";
+			header("Location: ../contactus.php");
 	}
 
-	echo json_encode($response);
+	// echo json_encode($response);
 }
+
+?>
