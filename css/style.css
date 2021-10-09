@@ -97,6 +97,18 @@ a {
     box-shadow: none!important
 }
 
+.modal .btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.modal .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
 .btn {
     box-shadow: none;
     outline: none;
@@ -188,6 +200,14 @@ a {
 }
 
 /* ===================Navbar */
+
+.modal-backdrop {
+    position: static;
+}
+
+.modal {
+    background-color: #11111199;
+}
 
 .navbar-light .navbar-toggler {
     border-color: #ffc107
@@ -450,6 +470,116 @@ a {
     color: #fff
 }
 
+.nav-bag .navbar-nav .nav-link-modal {
+    color: tomato;
+}
+
+.navbar-nav .nav-link-modal {
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    padding: 0;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.mailCol {
+    position: relative;
+}
+
+.mail_i {
+    width: 30px;
+    height: 30px;
+    color: slategrey;
+    position: absolute;
+    right: 20px;
+    top: 46%;
+}
+
+.NotOk .mail_i::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f057";
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-weight: 600;
+    transform: skewX( 10deg);
+    color: #dc3545;
+}
+.Ok .mail_i::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f058";
+    color: #00c58b;
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-weight: 600;
+    transform: skewX( 10deg);
+}
+
+
+
+.passCol{
+    position: relative;
+}
+
+.pass_i {
+    width: 30px;
+    height: 30px;
+    color: slategrey;
+    position: absolute;
+    right: 20px;
+    top: 46%;
+}
+
+.NotOkPass .pass_i::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f057";
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-weight: 600;
+    transform: skewX( 10deg);
+    color: #dc3545;
+}
+.OkPass .pass_i::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f058";
+    color: #00c58b;
+    font-family: "Font Awesome 5 Free";
+    font-size: 24px;
+    font-weight: 600;
+    transform: skewX( 10deg);
+}
+
+
+.mail_text_log {
+    color: slategrey;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    top: 55%;
+}
+
+.pass_text_log {
+    color: slategrey;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    top: 55%;
+}
+
 .nav-bag {
     background: #ffffffcc;
     border-bottom: 2px solid #ffc107;
@@ -575,7 +705,7 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(#0006,#111);
+    background: radial-gradient(#0006, #111);
     z-index: 10
 }
 
@@ -1086,16 +1216,16 @@ a {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
-    #nav-bottom{
+    #nav-bottom {
         background: #f7f7f7cc !important;
         border-top: 2px solid #ffc107;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
-    .footer-icon .icons .icon-name{
+    .footer-icon .icons .icon-name {
         padding: 0 10px !important;
     }
-    #myBtn{
+    #myBtn {
         right: 20px !important;
     }
 }
@@ -1358,11 +1488,11 @@ a {
     animation: animate 5s linear 5s;
 }
 
-@keyframes animate{
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
         color: #eee;
     }
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
         color: #ffc107;
     }
 }

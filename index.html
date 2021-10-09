@@ -70,12 +70,107 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contactus.php">Contact Us</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="nav-link-modal" data-bs-toggle="modal"
+                                data-bs-target="#signUp">
+                                Login / Signup
+                            </button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- header -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="signUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Up Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="./php/login.php" method="POST" role="form" class="row g-3" id="form">
+                        <div class="col-md-12">
+                            <label for="UserFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="user_firstName"
+                                placeholder="Enter Your First name" aria-label="First name" required id="UserFirstName">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="userLastName" class="form-label">Last Name</label>
+                            <input type="text" name="user_lastName" class="form-control"
+                                placeholder="Enter Your Last name" aria-label="Last Name" id="userLastName" required>
+                        </div>
+                        <div class="col-md-12 mailCol">
+                            <label for="userEmail" class="form-label">Email Id</label>
+                            <input type="email" name="user_email" class="form-control userEmail"
+                                placeholder="name@gmail.com" required>
+                            <i class="mail_i"></i>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputMobile" class="form-label">Mobile Number</label>
+                            <input type="number" maxlength="11" id="userMobile" name="user_mobile" class="form-control"
+                                id="inputMobile" placeholder="Enter a valid mobile number" required>
+                        </div>
+                        <div class="col-md-12 passCol">
+                            <label for="pass" class="form-label">Password</label>
+                            <input type="password" class="form-control pass" name="user_password"
+                                placeholder="8 Digit Password" required>
+                            <i class="pass_i"></i>
+                        </div>
+                        <div class="col-md-12 mt-4" style="display: flex; justify-content: space-between;">
+                            <button type="submit" class="btn btn-outline-success w-50" id="signUp_btn">Sign Up</button>
+                            <button type="button" class="btn btn-secondary w-50 ms-2" data-bs-target="#signIn"
+                                data-bs-toggle="modal" data-bs-dismiss="modal">Sign In?</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signIn" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Login Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="./php/login.php" method="POST" role="form" class="row g-3">
+                        <div class="col-md-12 mailCol">
+                            <label for="userEmailLog" class="form-label">Email Id</label>
+                            <input type="email" name="user_email_login" class="form-control userEmailLog"
+                                placeholder="name@gmail.com" required>
+                            <span class="mail_text_log"></span>
+                        </div>
+                        <div class="col-md-12 passCol">
+                            <label for="passLog" class="form-label">Password</label>
+                            <input type="password" class="form-control passLog" name="user_password_login"
+                                placeholder="1-10, a-z" required>
+                            <span class="pass_text_log"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#signUp" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Create a new account?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================== -->
     <section id="all_page">
         <div class="container-fluid top-caro" id="caro">
             <a title="Click Me To Scroll" href="#services" id="scroll-down">
@@ -609,6 +704,114 @@
     <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
     <script src="./js/index.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // form validation
+
+        function validateEmail() {
+            var email = $(".userEmail").val();
+            var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+            if (reg.test(email)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function validatePassword() {
+            var pass = $(".pass").val();
+
+            if (pass.length > 8) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        $(document).ready(function () {
+
+            $(".userEmail").keyup(function () {
+                if (validateEmail()) {
+                    $(".userEmail").css("border", "2px solid #00c58b");
+                    $(".mailCol").addClass("Ok");
+                    $(".mailCol").removeClass("NotOk");
+                }
+                else {
+                    $(".userEmail").css("border", "2px solid #dc3545");
+                    $(".mailCol").removeClass("Ok");
+                    $(".mailCol").addClass("NotOk");
+                }
+
+            });
+
+            $(".pass").keyup(function () {
+                // check
+                if (validatePassword()) {
+                    $(".pass").css("border", "2px solid #00c58b");
+                    $(".passCol").addClass("OkPass");
+                    $(".passCol").removeClass("NotOkPass");
+                } else {
+                    $(".pass").css("border", "2px solid #dc3545");
+                    $(".passCol").removeClass("OkPass");
+                    $(".passCol").addClass("NotOkPass");                
+                }
+            });
+
+        });
+
+
+        // login page======================================================================
+
+        function validateEmail2() {
+            let email2 = $(".userEmailLog").val();
+            let reg2 = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+            if (reg2.test(email2)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function validatePassword2() {
+            let pass2 = $(".passLog").val();
+
+            if (pass2.length > 8) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        $(document).ready(function () {
+
+            $(".userEmailLog").keyup(function () {
+                if (validateEmail2()) {
+                    $(".userEmailLog").css("border", "2px solid #00c58b");
+                    $(".mail_text_log").text("Your Email is Ok");
+                }
+                else {
+                    $(".userEmailLog").css("border", "2px solid #dc3545");
+                    $(".mail_text_log").text("Email is not valid");
+                }
+
+            });
+
+            $(".passLog").keyup(function () {
+                // check
+                if (validatePassword2()) {
+                    $(".passLog").css("border", "2px solid #00c58b");
+                    $(".pass_text_log").text("Password is valid");
+                } else {
+                    $(".passLog").css("border", "2px solid #dc3545");
+                    $(".pass_text_log").text("Please use 8 digit password.");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
